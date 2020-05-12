@@ -12,6 +12,8 @@ println "Pipeline version: ${pipelineVersion}"
  * to run in both Kubernetes and OpenShift environments.
  */
 
+ 
+
 def buildAgentName(String jobNameWithNamespace, String buildNumber, String namespace) {
     def jobName = removeNamespaceFromJobName(jobNameWithNamespace, namespace);
 
